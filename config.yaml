@@ -1,0 +1,24 @@
+models:
+  ppe: models/ppe_yolov8.pt
+  fire_smoke: models/fire_smoke/best.pt
+
+inference:
+  confidence: 0.25
+  image_size: 640
+  frame_stride: 2
+
+tracking:
+  minimum_person_frames: 15
+  missing_gear_ratio: 0.5
+
+required_gear:
+  - helmet
+  - vest
+
+camera_zones:
+  camera-1: Factory Floor
+
+alerts:
+  cooldown_seconds: 10
+  confirmation_frames: 3
+  telegram_live_enabled: false

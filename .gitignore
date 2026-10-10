@@ -1,0 +1,12 @@
+runs/
+.venv/
+venv/
+.env
+__pycache__/
+*.py[cod]
+datasets/
+models/
+outputs/
+outputs/label_vis_train/
+outputs/label_vis_val/
+outputs/ml_pipeline/*.png
